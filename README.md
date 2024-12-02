@@ -3,7 +3,7 @@ This repository contains the data and code for all analysis, for the paper "Inte
 
 # Data 
 
-* newGenexp.RData, downloaded from [here](https://github.com/linnykos/covarianceSelection/blob/master/newGenexp.RData). 
+* `newGenexp.RData`, downloaded from [here](https://github.com/linnykos/covarianceSelection/blob/master/newGenexp.RData). 
 
 # Running the annalysis
 

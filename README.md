@@ -11,4 +11,4 @@ Below are the following steps to run the analysis. Codes are borrowed and modifi
 
 ## R packgae installation 
 
-## step 1: data cleaning, 
+## step 1: data cleaning

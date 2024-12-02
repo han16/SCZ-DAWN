@@ -1,1 +1,31 @@
+```{r, message=F, warning=F}
+rm(list=ls())
+set.seed(123)
+library(rprojroot)
+root <- rprojroot::find_rstudio_root_file()
+```
+
+
+```{r, message=F, warning=F, eval=T}
+#format the brainspan dataset
+#load("newGenexp.RData")
+load(file.path(root, "data/newGenexp.RData"))
+rownames(genexp) <- genexp[,1]
+genexp <- genexp[,-1]
+genexp <- t(genexp)
+genexp <- as.data.frame(genexp) 
+
+```
+
+
+
+
+
+```{r, message=F, warning=F, eval=F}
+#determine brain-expressed genes
+load("../data/brain_expression.rda") 
+brain_genes <- brain_expression$Gene[brain_expression$Brain_expressed != 'No']  
+idx <- which(colnames(genexp) %in% brain_genes)
+genexp <- genexp[,idx] 
+```
 

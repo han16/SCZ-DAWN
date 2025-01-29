@@ -12,4 +12,4 @@ Just run `main_code.Rmd` to get the DAWN risk genes, with all accompanion codes 
  
 # Notes 
 
-* 
+* A total of 3100 genes are used in this analysis. In the screening step, p value of 0.01 was used, resulting in 193 genes, and the rest 2907 genes were selected with strong correlations with these 193 genes.  

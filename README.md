@@ -30,11 +30,11 @@ The followings are the main procedure to run the  `main_code.Rmd`.
 
 * in this screening step, p value of 0.01 was used, resulting in 193 genes, and the rest 2907 genes were selected with strong correlations with these 193 genes.
 
-## Choosing tuning parameters 
+## choose tuning parameters 
 
 * to determine the adjacency matrix, the tuning parameter $\lambda=0.24$ was used that maimizes $R^2$, by the scale free criterion.
 
- ## Run HMRF 
+ ## run HMRF 
   
 * one key parameter is the initial risk genes to run HMRF. We chose 15 genes with de novo mutations as initial risk genes since de novo mutations tend to be deleterious.
 

@@ -26,7 +26,7 @@ The followings are the main procedure to run the  `main_code.Rmd`.
 
 ## run screening step 
 
- * set p value threshold 0.1; total number of 3,000 genes; choose 10-19 PCW data 
+ * set p value threshold 0.1; total number of 3,100 genes; choose 10-19 PCW data 
 
 * in this screening step, p value of 0.01 was used, resulting in 193 genes, and the rest 2907 genes were selected with strong correlations with these 193 genes.
 

@@ -101,7 +101,7 @@ idx <- which(scz2$Gene %in% colnames(genexp))
 scz3=scz2[idx,] # 4 risk genes not in gene expression data:  scz2$Gene[which(!scz2$Gene[1:32]%in%colnames(genexp))]
 
 
-source("misc.R") # load functions downloaded in local folder 
+source("misc.R") # load functions 
 
 idx <- matching(scz3$Gene, colnames(genexp))
 genexp <- genexp[,idx]  # 1294 x 12879 
@@ -175,9 +175,7 @@ stopifnot(sum(colnames(dat_pfc35)%in%colnames(genexp))==num_genes)
 
 
 
-## run PNS, HMRF and FDR
-
-
+## Choosing tuning parameters 
 
 
 
@@ -194,7 +192,6 @@ res <- graphicalModel_range(dat_pfc35, 1:length(screening_res$primary),
 ```
 
 
-## tuning parameters 
 
 ```{r, message=F, warning=F, eval=T}
 source("graph_functions.R")
@@ -211,7 +208,7 @@ stopifnot(all(dim(adj_pfc35) == nrow(scz)))
 ```
 
 
-## HMRF
+## Run HMRF
 
 
 ```{r, message=F, warning=F, eval=T}
